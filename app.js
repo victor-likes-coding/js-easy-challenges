@@ -14,7 +14,12 @@ const hoursIntoSeconds = (hours) => {
     return hours * minutes * seconds;
 };
 
+const calcPerimeter = (length, width) => {
+    return (length + width) * 2;
+};
+
 module.exports = {
     sum,
     hoursIntoSeconds,
+    calcPerimeter,
 };
