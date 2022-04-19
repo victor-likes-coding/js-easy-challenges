@@ -8,6 +8,7 @@ const sum = (a, b) => {
 };
 
 const hoursIntoSeconds = (hours) => {
+    // vars are mostly for readibility purposes
     const minutes = 60;
     const seconds = 60;
     return hours * minutes * seconds;
