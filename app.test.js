@@ -1,4 +1,4 @@
-const { sum, hoursIntoSeconds, calcPerimeter } = require("./app.js");
+const { sum, hoursIntoSeconds, calcPerimeter, calcTriangleArea } = require("./app.js");
 
 describe("Sum function", () => {
     test("1 + 1 = 2", () => {
@@ -30,5 +30,17 @@ describe("Perimeter function", () => {
     });
     test("l: 2, w: 9 => 22", () => {
         expect(calcPerimeter(2, 9)).toBe(22);
+    });
+});
+
+describe("Triangle area function", () => {
+    test("base: 3, height: 2 => 3", () => {
+        expect(calcTriangleArea(3, 2)).toBe(3);
+    });
+    test("base: 10, height: 10 => 50", () => {
+        expect(calcTriangleArea(10, 10)).toBe(50);
+    });
+    test("base: 20, height: 20 => 200", () => {
+        expect(calcTriangleArea(20, 20)).toBe(200);
     });
 });
