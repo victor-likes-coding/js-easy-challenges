@@ -1,4 +1,4 @@
-const { sum, hoursIntoSeconds } = require("./app.js");
+const { sum, hoursIntoSeconds, calcPerimeter } = require("./app.js");
 
 describe("Sum function", () => {
     test("1 + 1 = 2", () => {
@@ -18,5 +18,17 @@ describe("Hour to second conversion function", () => {
     });
     test("24 hours => 86400 seconds", () => {
         expect(hoursIntoSeconds(24)).toBe(86400);
+    });
+});
+
+describe("Perimeter function", () => {
+    test("l: 6, w: 7 => 26", () => {
+        expect(calcPerimeter(6, 7)).toBe(26);
+    });
+    test("l: 20, w: 10 => 60", () => {
+        expect(calcPerimeter(20, 10)).toBe(60);
+    });
+    test("l: 2, w: 9 => 22", () => {
+        expect(calcPerimeter(2, 9)).toBe(22);
     });
 });
