@@ -1,0 +1,24 @@
+{
+    "name": "js-easy",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/victor-likes-coding/js-easy-challenges.git"
+    },
+    "keywords": [],
+    "author": "Victor Tran",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/victor-likes-coding/js-easy-challenges/issues"
+    },
+    "homepage": "https://github.com/victor-likes-coding/js-easy-challenges#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "jest": "^27.5.1"
+    }
+}
