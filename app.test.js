@@ -1,4 +1,4 @@
-const { sum } = require("./app.js");
+const { sum, hoursIntoSeconds } = require("./app.js");
 
 describe("Sum function", () => {
     test("1 + 1 = 2", () => {
