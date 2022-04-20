@@ -8,6 +8,7 @@ const {
     lessThanOrEqualToZero,
     oppositeBoolean,
     isNotZero,
+    calcRemainder,
 } = require("./app.js");
 
 describe("Sum function", () => {

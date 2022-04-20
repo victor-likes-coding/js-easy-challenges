@@ -38,6 +38,8 @@ const oppositeBoolean = (bool) => !bool;
 
 const isNotZero = (num) => num !== 0;
 
+const calcRemainder = (num1, num2) => num1 % num2;
+
 module.exports = {
     sum,
     hoursIntoSeconds,
@@ -48,4 +50,5 @@ module.exports = {
     lessThanOrEqualToZero,
     oppositeBoolean,
     isNotZero,
+    calcRemainder,
 };
