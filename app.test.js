@@ -1,4 +1,4 @@
-const { sum, hoursIntoSeconds, calcPerimeter, calcTriangleArea } = require("./app.js");
+const { sum, hoursIntoSeconds, calcPerimeter, calcTriangleArea, appendFrontEnd } = require("./app.js");
 
 describe("Sum function", () => {
     test("1 + 1 = 2", () => {
@@ -42,5 +42,17 @@ describe("Triangle area function", () => {
     });
     test("base: 20, height: 20 => 200", () => {
         expect(calcTriangleArea(20, 20)).toBe(200);
+    });
+});
+
+describe("add 'Frontend' to string function", () => {
+    test("string: Apple => AppleFrontend", () => {
+        expect(appendFrontEnd("Apple")).toBe("AppleFrontend");
+    });
+    test("string: Banana => BananaFrontend", () => {
+        expect(appendFrontEnd("Banana")).toBe("BananaFrontend");
+    });
+    test("string: Orange => OrangeFrontend", () => {
+        expect(appendFrontEnd("Orange")).toBe("OrangeFrontend");
     });
 });
