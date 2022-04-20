@@ -11,6 +11,7 @@ const {
     calcRemainder,
     isOdd,
     booleanInteger,
+    isLoggedInAndSubscribed,
 } = require("./app.js");
 
 describe("Sum function", () => {
@@ -149,5 +150,17 @@ describe("fn to return 1 on even or -1 on odd", () => {
     });
     test("in: 5 -> -1", () => {
         expect(booleanInteger(5)).toBe(-1);
+    });
+});
+
+describe("fn to check if user logged in and subscribed", () => {
+    test(`in: "LOGGED_IN", "SUBSCRIBED out: true`, () => {
+        expect(isLoggedInAndSubscribed("LOGGED_IN", "SUBSCRIBED")).toBe(true);
+    });
+    test(`in: "LOGGED_IN", "UNSUBSCRIBED out: false`, () => {
+        expect(isLoggedInAndSubscribed("LOGGED_IN", "UNSUBSCRIBED")).toBe(false);
+    });
+    test(`in: "LOGGED_OUT", "SUBSCRIBED: out: false`, () => {
+        expect(isLoggedInAndSubscribed("LOGGED_OUT", "SUBSCRIBED")).toBe(false);
     });
 });
