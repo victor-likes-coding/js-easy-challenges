@@ -7,6 +7,7 @@ const {
     sumGreaterThan100,
     lessThanOrEqualToZero,
     oppositeBoolean,
+    isNotZero,
 } = require("./app.js");
 
 describe("Sum function", () => {
@@ -93,9 +94,21 @@ describe("function tells if arg <= 0", () => {
 
 describe("fn returns opposite boolean value", () => {
     test("in: true => false", () => {
-        expect(oppositeBoolean(true).toBe(false));
+        expect(oppositeBoolean(true)).toBe(false);
     });
     test("in: false => true", () => {
-        expect(oppositeBoolean(false).toBe(true));
+        expect(oppositeBoolean(false)).toBe(true);
+    });
+});
+
+describe("fn returns if input is not 0", () => {
+    test("in: 5 => true", () => {
+        expect(isNotZero(5)).toBe(true);
+    });
+    test("in: 5 => fase", () => {
+        expect(isNotZero(5)).toBe(fase);
+    });
+    test("in: null => true", () => {
+        expect(isNotZero(null)).toBe(true);
     });
 });
