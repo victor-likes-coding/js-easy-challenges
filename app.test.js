@@ -68,3 +68,16 @@ describe("function that determines if sum is greater than 100", () => {
         expect(sumGreaterThan100(100, -50)).toBe(false);
     });
 });
+
+describe("function tells if arg <= 0", () => {
+    test("3 => false", () => {
+        expect(lessThanOrEqualToZero(3)).toBe(false);
+    });
+
+    test("0 => true", () => {
+        expect(lessThanOrEqualToZero(0)).toBe(true);
+    });
+    test("-2 => true", () => {
+        expect(lessThanOrEqualToZero(-2)).toBe(true);
+    });
+});
