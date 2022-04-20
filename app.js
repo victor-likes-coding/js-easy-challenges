@@ -26,10 +26,15 @@ const appendFrontEnd = (text) => {
     return `${text}Frontend`;
 };
 
+const sumGreaterThan100 = (num1, num2) => {
+    return sum(num1, num2) > 100;
+};
+
 module.exports = {
     sum,
     hoursIntoSeconds,
     calcPerimeter,
     calcTriangleArea,
     appendFrontEnd,
+    sumGreaterThan100,
 };
