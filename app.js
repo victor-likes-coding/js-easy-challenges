@@ -22,9 +22,14 @@ const calcTriangleArea = (base, height) => {
     return base * height * 0.5;
 };
 
+const appendFrontEnd = (text) => {
+    return `${text}Frontend`;
+};
+
 module.exports = {
     sum,
     hoursIntoSeconds,
     calcPerimeter,
     calcTriangleArea,
+    appendFrontEnd,
 };
