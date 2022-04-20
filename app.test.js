@@ -106,7 +106,7 @@ describe("fn returns if input is not 0", () => {
         expect(isNotZero(5)).toBe(true);
     });
     test("in: 5 => fase", () => {
-        expect(isNotZero(5)).toBe(fase);
+        expect(isNotZero(0)).toBe(false);
     });
     test("in: null => true", () => {
         expect(isNotZero(null)).toBe(true);
