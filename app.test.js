@@ -9,6 +9,7 @@ const {
     oppositeBoolean,
     isNotZero,
     calcRemainder,
+    isOdd,
 } = require("./app.js");
 
 describe("Sum function", () => {
@@ -123,5 +124,17 @@ describe("fn to calculate remainder", () => {
     });
     test("in: 9, 8 out: 1", () => {
         expect(calcRemainder(9, 8)).toBe(1);
+    });
+});
+
+describe("fn to tell if input is odd", () => {
+    test("in: 1 => true", () => {
+        expect(isOdd(1)).toBe(true);
+    });
+    test("in: 2 => false", () => {
+        expect(isOdd(2)).toBe(false);
+    });
+    test("in: 3 => true", () => {
+        expect(isOdd(3)).toBe(true);
     });
 });
