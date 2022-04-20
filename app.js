@@ -44,6 +44,8 @@ const isOdd = (num) => num % 2 === 1;
 
 const booleanInteger = (num) => (isOdd(num) ? -1 : 1);
 
+const isLoggedInAndSubscribed = (authStatus, subbed) => authStatus === "LOGGED_IN" && subbed === "SUBSCRIBED";
+
 module.exports = {
     sum,
     hoursIntoSeconds,
@@ -57,4 +59,5 @@ module.exports = {
     calcRemainder,
     isOdd,
     booleanInteger,
+    isLoggedInAndSubscribed,
 };
