@@ -56,3 +56,15 @@ describe("add 'Frontend' to string function", () => {
         expect(appendFrontEnd("Orange")).toBe("OrangeFrontend");
     });
 });
+
+describe("function that determines if sum is greater than 100", () => {
+    test("sums of 20, 10 = 30 => false", () => {
+        expect(sumGreaterThan100(20, 10)).toBe(false);
+    });
+    test("sums of 50, 60 = 110 => true", () => {
+        expect(sumGreaterThan100(50, 60)).toBe(true);
+    });
+    test("sums of 100, -50 =50 => false", () => {
+        expect(sumGreaterThan100(100, -50)).toBe(false);
+    });
+});
