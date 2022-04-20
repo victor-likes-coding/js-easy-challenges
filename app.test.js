@@ -1,4 +1,4 @@
-const { sum, hoursIntoSeconds, calcPerimeter, calcTriangleArea, appendFrontEnd } = require("./app.js");
+const { sum, hoursIntoSeconds, calcPerimeter, calcTriangleArea, appendFrontEnd, sumGreaterThan100 } = require("./app.js");
 
 describe("Sum function", () => {
     test("1 + 1 = 2", () => {
