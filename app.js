@@ -30,6 +30,10 @@ const sumGreaterThan100 = (num1, num2) => {
     return sum(num1, num2) > 100;
 };
 
+const lessThanOrEqualToZero = (num) => {
+    return num <= 0;
+};
+
 module.exports = {
     sum,
     hoursIntoSeconds,
@@ -37,4 +41,5 @@ module.exports = {
     calcTriangleArea,
     appendFrontEnd,
     sumGreaterThan100,
+    lessThanOrEqualToZero,
 };
