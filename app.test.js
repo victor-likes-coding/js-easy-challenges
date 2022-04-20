@@ -10,6 +10,7 @@ const {
     isNotZero,
     calcRemainder,
     isOdd,
+    booleanInteger,
 } = require("./app.js");
 
 describe("Sum function", () => {
@@ -136,5 +137,17 @@ describe("fn to tell if input is odd", () => {
     });
     test("in: 3 => true", () => {
         expect(isOdd(3)).toBe(true);
+    });
+});
+
+describe("fn to return 1 on even or -1 on odd", () => {
+    test("in: 1 -> -1", () => {
+        expect(booleanInteger(1)).toBe(-1);
+    });
+    test("in: 2 -> 1", () => {
+        expect(booleanInteger(2)).toBe(1);
+    });
+    test("in: 5 -> -1", () => {
+        expect(booleanInteger(5)).toBe(-1);
     });
 });
