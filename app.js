@@ -36,6 +36,8 @@ const lessThanOrEqualToZero = (num) => {
 
 const oppositeBoolean = (bool) => !bool;
 
+const isNotZero = (num) => num !== 0;
+
 module.exports = {
     sum,
     hoursIntoSeconds,
@@ -45,4 +47,5 @@ module.exports = {
     sumGreaterThan100,
     lessThanOrEqualToZero,
     oppositeBoolean,
+    isNotZero,
 };
