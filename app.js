@@ -18,8 +18,13 @@ const calcPerimeter = (length, width) => {
     return (length + width) * 2;
 };
 
+const calcTriangleArea = (base, height) => {
+    return base * height * 0.5;
+};
+
 module.exports = {
     sum,
     hoursIntoSeconds,
     calcPerimeter,
+    calcTriangleArea,
 };
