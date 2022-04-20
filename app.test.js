@@ -112,3 +112,15 @@ describe("fn returns if input is not 0", () => {
         expect(isNotZero(null)).toBe(true);
     });
 });
+
+describe("fn to calculate remainder", () => {
+    test("in: 4, 2 out: 0", () => {
+        expect(calcRemainder(4, 2)).toBe(0);
+    });
+    test("in: 7, 8 out: 7", () => {
+        expect(calcRemainder(7, 8)).toBe(7);
+    });
+    test("in: 9, 8 out: 1", () => {
+        expect(calcRemainder(9, 8)).toBe(1);
+    });
+});
