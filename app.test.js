@@ -81,3 +81,12 @@ describe("function tells if arg <= 0", () => {
         expect(lessThanOrEqualToZero(-2)).toBe(true);
     });
 });
+
+describe("fn returns opposite boolean value", () => {
+    test("in: true => false", () => {
+        expect(oppositeBoolean(true).toBe(false));
+    });
+    test("in: false => true", () => {
+        expect(oppositeBoolean(false).toBe(true));
+    });
+});
